@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HDS -2022</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Oswald:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link    rel="stylesheet"    href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css'><link rel="stylesheet" href="./style.css">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/forms.js"></script>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="mb-0 text-primary text-uppercase d-flex align-items-center"><span class="logo-nav"><img src="img/logo.png" alt=""></span>HDS22</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link ">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#event" class="nav-item nav-link">Events</a>
+                <a href="#objective" class="nav-item nav-link">Objective</a>           
+                <a href="#gallery" class="nav-item nav-link">Gallery</a>
+            </div>
+            <a href="#compete"  class="btn btn-primary rounded-0 py-2 px-lg-4  d-lg-block">COMPETITION</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+ 
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0  wow fadeIn" data-wow-delay="0.1s">
+        <!-- <div id="three-container"></div> -->
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-2.png" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center text-start">
+                        <div class="mx-sm-5 px-5" style="max-width: 900px;">
+                            <h1 class="display-2 text-white text-uppercase mb-4 animated slideInDown hds">
+                                HOTDOG SHOWDOWN
+                            </h1>
+                            <!-- <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York, USA</h4>
+                            <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</h4> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center text-start">
+                        <div class="mx-sm-5 px-5" style="max-width: 900px;">
+                            <h1 class="display-2 text-white text-uppercase mb-4 animated slideInDown">Luxury Haircut at Affordable Price</h1>
+                            <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York, USA</h4>
+                            <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</h4>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button> -->
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <div class="timer container-fluid d-flex justify-content-center align-items-center flex-column">
+        <div class="countdownwrap d-flex justify-content-center mb-4"></div>
+        <h2>MORE FOR HOTDOG SHOWDOWN</h2>
+    </div>
+
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="about">
+        <div class="container">
+            <div class="row g-5 mb-4">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" >
+                    <div class="d-flex flex-column" >
+                        <img class="img-fluid w-75 align-self-end" src="img/about.png" alt="">
+                        <div class="w-50 bg-secondary p-4" style="margin-top: -25%;">
+                            <h1 class="text-uppercase text-primary mb-3">6000+</h1>
+                            <h2 class="text-uppercase mb-0 overall" >OVERALL PARTICIPANTS</h2>
+                        </div>
+                        <!-- <div class="w-50 bg-secondary p-4" style="margin-top: 5%;">
+                            <h1 class="text-uppercase text-primary mb-3">130+</h1>
+                            <h2 class="text-uppercase mb-0 overall">PARTICIPANTS</h2>
+                        </div> -->
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" >
+                    <p class="d-inline-block bg-secondary text-primary py-1 px-4">HDS 2022</p>
+                    <h1 class="text-uppercase mb-4">PROJECT HOTDOG SHOWDOWN !!</h1>
+                    <p>For the past eight years, ‘Hot Dog Showdown’ has been the signature project of the Rotaract Club of Informatics Institute of Technology. Hot Dog Showdown is a food eating challenge that started within IIT more than a decade ago, since then the initiative has reached thousands of spectators and participants over the years. The pure nature of the project and its impact is what makes Hot Dog Showdown an award winning initiative within the Rotaract community.</p>
+                    <p class="mb-4">All funds raised by ‘Hot Dog Showdown’ would go toward the club’s main community service initiative, ‘E-Mithudama’, under which the club builds and donates computer laboratories to children in rural areas with limited learning resources. We aspire to give our event partners a platform in which they can represent themselves across thousands of Roratactors, Interactors and the general public.</p>
+                    <!-- <div class="row g-4">
+                        <div class="col-md-6">
+                            <h3 class="text-uppercase mb-3">Since 2013</h3>
+                            <p class="mb-0">Since 2013, Hot Dog Showdown (HDS) has been an annual project of the Rotaract club of IIT. Over the years the Rotaract District 3220 has awarded HDS with their ‘Best Public Relations Effort’ for several years and we have expanded the project with the help of our members and partnerships to make an impact bigger than the year before. HDS has evolved into much more than a hotdog eating competition; it has become a platform for the Rotaract club of IIT to reach a much wider audience within the country.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="text-uppercase mb-3">MORE FUN</h3>
+                            <p class="mb-0">HDS was last held in 2020 since then the various challenges prevented us from hosting Hot Dog Showdown, in 2022 HDS hopes to make a return after 2 years since its last debut. This year we strive to make our initiative more impactful than the years before. Similar to years’ before HDS 2022 will be based around a hotdog eating competition but the event will feature additions such as carnival games, musical performances, a motor show,food and shopping stalls and much more.</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h3 class="text-uppercase mb-3">Since 2013</h3>
+                    <p class="mb-0">Since 2013, Hot Dog Showdown (HDS) has been an annual project of the Rotaract club of IIT. Over the years the Rotaract District 3220 has awarded HDS with their ‘Best Public Relations Effort’ for several years and we have expanded the project with the help of our members and partnerships to make an impact bigger than the year before. HDS has evolved into much more than a hotdog eating competition; it has become a platform for the Rotaract club of IIT to reach a much wider audience within the country.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-uppercase mb-3">MORE FUN</h3>
+                    <p class="mb-0">HDS was last held in 2020 since then the various challenges prevented us from hosting Hot Dog Showdown, in 2022 HDS hopes to make a return after 2 years since its last debut. This year we strive to make our initiative more impactful than the years before. Similar to years’ before HDS 2022 will be based around a hotdog eating competition but the event will feature additions such as carnival games, musical performances, a motor show,food and shopping stalls and much more.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5" id="event">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block bg-secondary text-primary py-1 px-4">Join us for Fun</p>
+                <h1 class="text-uppercase">EVENTS on hds</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="img/haircut.png" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3">Hotdogs</h3>
+                            <p>This is the star of the show. Without this there is no competition. And this is free if you join on the competition.</p>
+                            <span class="text-uppercase text-primary">#HDS2022</span>
+                        </div>
+                        <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="img/beard-trim.png" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3">Fun</h3>
+                            <p>All of this is done for you to have a great time with your friends and family. If you are coming alone dont worry you will make great memories with newly made friends at HDS.</p>
+                            <span class="text-uppercase text-primary">#HDS2022</span>
+                        </div>
+                        <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="img/mans-shave.png" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3">Food</h3>
+                            <p>Well hotdogs may be the star but we have many varieties of foods for you to try if you havent tried it and enjoy.</p>
+                            <span class="text-uppercase text-primary">#HDS2022</span>
+                        </div>
+                        <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="img/hair-dyeing.png" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3">Games</h3>
+                            <p>Newly introducing this year at hotdog showdown 2022 "CARNIVAL
+                                 GAMES". We have a variety of games in store for you. So dont miss out on g
+                                 etting that ticket.</p>
+                            <span class="text-uppercase text-primary">#HDS2022</span>
+                        </div>
+                        <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="img/mustache.png" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3">Motorshow</h3>
+                            <p>To all car lovers out there,
+                                Be prepared to be amazed by our selection of cars this year in our hotdog showdown 2022's motor show. 
+                                We have an interesting selection that you will definitely enjoy.
+                            </p>
+                            <span class="text-uppercase text-primary">#HDS2022</span>
+                        </div>
+                        <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="img/stacking.png" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3">Music</h3>
+                            <p>Live performances, dj music and dancers all included when coming to HDS. So prepare to be amazed by the line of people we have in store for you.</p>
+                            <span class="text-uppercase text-primary">#HDS2022</span>
+                        </div>
+                        <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Price Start -->
+    <div class="container-xxl py-5" id="objective">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-8 wow fadeIn min-emit" data-wow-delay="0.1s">
+                    <div class="bg-secondary h-100 d-flex flex-column justify-content-center p-5">
+                        <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">WHY WE DO IT?</p>
+                        <h1 class="text-uppercase mb-4">E-MITHUDAMA</h1>
+                        <div class="mithudama-cont">
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <!-- <h6 class="text-uppercase mb-0">Haircut</h6> -->
+                                <p>Rotaract Club of IIT initiated <span class="text-uppercase text-primary">“E-MIthudama”</span> a community service project based around the core objective of helping school children from rural, underprivileged areas of the country- to support and uplift their computer literacy, delivering to the younger generation of our country with the touch of advance technology that the world is currently experiencing</p>
+                                
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <!-- <h6 class="text-uppercase mb-0">Beard Trim</h6> -->
+                                <p>The project was inspired by the opportunity that could be created by partnering up with Unilever Sri Lanka Limited, the basic ideology of the project being to use laptops and desktops that
+                                     are left to be dumped, to build <span class="text-uppercase text-primary">“X-Labs”</span> in four underprivileged schools each year. Each device is tested to check if they are in a working condition, filtered and then given a proper clean up and they are sealed, to be transported to selected schools.Once in every 4 years the schools will have their labs renewed with new devices, adding value to the project due to its focus on sustainability.</p>
+                                
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <!-- <h6 class="text-uppercase mb-0">Mans Shave</h6> -->
+                                <p>Once the lab is set up, and it is open to be used, sessions on basic computing are conducted- 
+                                    how to use a computer, Microsoft Office etc. so the students are given an <span class="text-uppercase text-primary">introductory path for guidance</span>   in their computer literacy.Apart from which a separate session is conducted to the mentors 
+                                    and teachers of these students to get ahead with their teaching and tutoring.</p>
+                                
+                            </div>
+                            <div class="d-flex justify-content-between  py-2">
+                                <!-- <h6 class="text-uppercase mb-0">Hair Dyeing</h6> -->
+                                <p>“E- Mithudama” was born in the 9th charter year of the Rotaract Club
+                                     of IIT, since which, it has grown to be one of RACIIT’s 
+                                     ground-breaking signature community service projects, a <span class="text-uppercase text-primary"> 
+                                     promising project </span> that brings light to different communities all around the nation, so on a day in future we can rise ourselves up as one, cherishing on the impact we have brought for others.</p>
+                                
+                            </div>
+                       
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn " data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <ul id="vertical" >
+                         
+                         <li >
+                          <img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/100701393_3176325459078710_3669649542652887040_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=w70vRRUVkCMAX9_Rmc2&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT9Ju-fhIfRd1CZCRLhj0uMN2-PL5qP1q2YC3051gMZTgA&oe=62939C84" alt=""> 
+                         </li>
+                         <li >
+                            <img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t39.30808-6/250716283_4699313926779848_2839213072037534547_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=0debeb&_nc_ohc=ibju6ETl6QQAX_BOnAR&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT80BzQVqF0XUzIL3yAVOoiU6WEVH3oBzlvMOdhUy5nmCQ&oe=6273F0D4" alt=""> 
+                           </li>
+                           <li >
+                            <img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t39.30808-6/249883635_4699328320111742_7532438522114425_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=0debeb&_nc_ohc=wpT5Xi6DgpAAX-EWpP-&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT8ktS96WAnoLJwWk0AbVOckr2o2mSRzCAlYbqC-dWmTrQ&oe=62744EF4" alt=""> 
+                           </li>
+                           <li >
+                            <img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/100658058_3176321542412435_755968154525499392_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=fYJhlfcPLCYAX_zGKgq&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT_uNWixYHoPLORnai9588C926m0EFlMrroEgXKGhrCxpQ&oe=62949233" alt=""> 
+                           </li>
+                           <li >
+                            <img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/100673493_3176341805743742_2808188723525582848_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=Ypksoy-EHI8AX9cwwh9&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT-LKbwoufi7qn8At5OEjV9XkVQ8fU0dS084o8-p-jwM4Q&oe=62946C77" alt=""> 
+                           </li>
+                           <li >
+                            <img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/100782598_3176323412412248_4150952708943118336_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=bmudY1HeHhIAX_3R4fM&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT-X-a4SLfJR9Em2ztk1BDFLSh3GfcFKlU138_ejG-MzCw&oe=62942FE6" alt=""> 
+                           </li>
+                           <li>
+                            <img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t39.30808-6/251026778_4699329573444950_180487142234860985_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=0debeb&_nc_ohc=SfJXPtASlyAAX8auwFA&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT_nuh8_ONY-KOnoI6WjLTWTX7pFaPmjdzW46cm8OOMdmA&oe=6273E2E7" alt="">
+                        </li><li>
+                            <img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/101149936_3176326212411968_7108435380440924160_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=wglgL5zj6NcAX-AhK7X&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT9QIyy5hoo9ckeOPjgoSsiXZx_CyZgo1GsbLvl7IQzqnw&oe=629321A5" alt="">
+                        </li><li>
+                            <img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/100696913_3176323962412193_2390326145502412800_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=WANAZaXMopIAX-6980-&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT9CHA4D0BbS-xfi2dxqtNwpVMSQ8Ky5ioyksguvY9jvMQ&oe=62954B24" alt="">
+                        </li>
+                        <li>
+                            <img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/101262183_3176336769077579_5066231714557198336_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=2d8uXZm6j3sAX_dnqZM&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT9VyXlpS5yhBo2ld4Rwp5D0zGLjqiih7u615fYhaCdTNA&oe=62933816" alt="">
+                        </li>
+                        <li>
+                            <img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t39.30808-6/250393913_4699312740113300_8607500319716595501_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=0debeb&_nc_ohc=iwaTS7hTuAsAX8KX_fe&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT9BEXmUGLrtQjWP1inAYnsDtDLI6MlaHBhlDfQkQPJJ2A&oe=6274671E" alt="">
+                        </li>
+                     
+                     
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Price End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5" id="gallery">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block bg-secondary text-primary py-1 px-4">Gallery</p>
+                <h1 class="text-uppercase">PHOTO GALLERY</h1>
+            </div>
+            <div class="row g-4 pb-5 spg" >
+                    <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper gallery-imgs">
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/56218275_2539055029664284_4829474081906622464_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=6DSX9er_aNYAX_or3Bl&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT-VxBPp6Qcq_g_CKYj-SOLvWKa5GGxRgNbSM47GJtNK0w&oe=629615B9" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/56301825_2539065176329936_3726327515933835264_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=tQafMkpEmokAX94cGFS&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT8y7EfTgK1-aWPlHEqz46KvY5xyZZ-iz3RWPFWTu7jv1w&oe=62941005" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/56425632_2542646312638489_2098518151787446272_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=8-MAGFUcAP8AX8x26tk&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT-3BTSY7_flt612Izb7moZ8CXEXQns8DmSnksLpNa6oHg&oe=6296AA89" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/56454548_2539062709663516_3744914618267467776_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=SGAf_SOKi5gAX_nvkLB&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT_WnTwDvIu9qpXSw2uSXso_TBgGHntyue7dtThTMfuXCg&oe=629595D9" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/56500810_2539066789663108_5808122688568295424_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=WRkt1M-9qDgAX9PqDUs&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT80MFCg-armLuf_29WeWxo1XQcdGoKK3mcfJxHl2fbOdQ&oe=62942D8E" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/56517013_2542646335971820_1789760331631820800_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=aPq-71OLrbwAX8uJThE&_nc_oc=AQkWgeMR0VNOjGMImtz-UcUTppb2sHa0KvuV8XLWnKmT4MDOiuea8COmwSAhCjhd_74&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT9V1uEdUdSUbDewwGL-Wz7D8tTTP5lTe5Pd2MAd5jVFww&oe=62940A56" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/55925722_2539062449663542_112553784109957120_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=fiKZ0Le0S1sAX_Gh8pp&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT_23GXc0TeVk028F9ie4atpRnhZsTs5-v_tHdKdaY5w7g&oe=6295BF10" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/87055829_2832842753618842_1713437268133281792_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=vponi4aUTEYAX_fjbV2&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT-6JhD4-axkvQ2VSYMpNBhrdosAH6pGnhznym6OCNsSHg&oe=6293F4DB" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/56524983_2539059956330458_1272081931965562880_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=YWKnp7gMcXUAX-flRXF&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT-egTJ75P4TDTrGU5GZexkHtcac0kClBecvJB_GtKFLfQ&oe=629624C6" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/86294733_2832844943618623_7169513478997147648_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=EqaG9vqTXRMAX-EpucE&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT9OOaBvo4zbJlq2swyBG5DmRM9tMxErO6bNB-irCz8HKA&oe=6296AD44" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/87083722_2832842336952217_8176265431066083328_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=tAuLf6x0USUAX8ImKv9&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT9X0o2BkM8_uCUsFHxXyiDRQ5IZgDB3CT8bOS26Ln-JvQ&oe=6295ADAC" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/86969999_2832847543618363_9171497451918458880_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=vDz3Ra5tnWYAX8qWtj8&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT-TGqt8JNjkUbrdVopAfclrnJDRf3ag5F_FT0ETot5Zow&oe=62949473" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/56395125_2539061912996929_5084933501107568640_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=2vkiTCeoWskAX-sOzl5&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT_q4gv2io1bVoIEvKMyu321aHz8LoeUHDhbsBRUsSRzCA&oe=6294D29D" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/87151249_2832850110284773_7068365886779817984_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=agUHxixj9kMAX8mk_NR&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT_NO4iyA8qJah4who_6kpFDw_08AQbDhT31aKwlj277wA&oe=62957F0B" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/56158097_2539055192997601_2291931824890314752_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=hOIh1XsjYf4AX8WDzME&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT9BKJWDdYhytFM6CykfmQcjfu7nKZHthAguIGzZ8LWtVQ&oe=6294D768" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/56140543_2539059919663795_3264828280636702720_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=fZGksJhyhFcAX8wn9AM&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT8OLYpUU4fUFwi63_QoYzlCUUiZtTMrSpmfM0wT2Ae4EQ&oe=629320BE" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/86490310_2832853506951100_5257158713264832512_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=8MsgRc1kuZUAX9YSPtE&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT9WIPKg8DOtgZP6_UXo8zBeI-2P910rHAkdKqc8ebad0Q&oe=629599DD" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/87217418_2836681173235000_5572822557364584448_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=7dLb2Kigkv0AX_MDr3e&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT9WRwFkTgHU-KrZRYhWsBX9bXOYsRFZDwbooFNTbvfyLQ&oe=62935820" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/87182344_2836690839900700_2512760407387537408_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=n_l64ANm2SMAX_kpwPT&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT8zrnzGrHPVeexxHM9if_zxyYvzJvsPifYu9DMJrKhJIQ&oe=62938220" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/56544646_2539064899663297_1907351266271428608_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=PapH1Kc27HcAX-b5ZRg&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT_UMz1sCJQh2wI4j1d_xHzoaM8yHw141bSCvOVLbHA2yg&oe=62937FE4" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/86406445_2832842196952231_6579388498694897664_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=u2NewEcycLMAX8YdeuI&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT_umi4JnmxpsPKXgxVrDfnon3D-JGow34Gv1SUPMC2Xig&oe=62950A42" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/87832366_2836689396567511_3603906396648636416_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=O4sZqfgxYUYAX-p2iLu&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT_4OwbnzWo_0e5yOKxQipS-I-V_KgeaRJXWungBQiU71w&oe=6292E9AA" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/56584207_2539063112996809_2272652764670590976_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=YBOW61HrbK8AX9HnB7v&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT-jqhYUBfTliiTKm0eYEgLd3VRgKjOPC0U8JomwbjWcsA&oe=6293EE3D" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/87824344_2838361309733653_6859541677745373184_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=1_uY5bdfJg0AX86XDGI&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT_tyFaBk7H-FbHLM8AZiMuJ6rlA6MopclTzMsTdZUjl3g&oe=62958662" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/56349190_2539062892996831_772521246247092224_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=5PuGY-tiIbUAX88YsvO&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT8p91m1S8mzDxQl95MSYH78QKdF53_UFF4zfIvAcw2sDQ&oe=62960A63" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/86276647_2832839040285880_3687682242018017280_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=mHBye8WLb8cAX8-dDiA&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT-0MXA1bg90vbzCZalmV43BJy6mMpBI1no5mYBEh4essA&oe=62943912" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/87980789_2838361779733606_3101500320866369536_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=Yk9QeOZghwYAX9g8AeH&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT8h7GulJmFqOB0LX-QDSPvGzAz6rO3PUYA_wDoswUp0eA&oe=6295B9A2" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/56300105_2539060526330401_6246995477804351488_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=hWrMOag54w4AX83BnkT&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT_eFw5vVe9hC6irU9KmongiB32hPICCAxTwpTcDZ4tB1w&oe=629358BF" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/87268484_2832850076951443_7572618712600018944_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=y65igTJV0tcAX95z-LG&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT-QIHhaPjt9iNk--Xm1yjYKNBqErUkXwqnQbh36FoSbTQ&oe=62943F3A" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/87386641_2836685179901266_1870363171127033856_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=5ErMcVBnaIIAX8wN3-a&_nc_oc=AQmrVraz83pCgoUxlqJGlarjv-c81yhl5MzWmkvHcrQ3j2knGxhHvCgrTUcitQZ4blc&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT8Z2Nv_1IbJv0LBJQsieetsjbZe3qeMicToBLgnJyIF2Q&oe=6292FFDE" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/56303473_2539068176329636_9182061709961986048_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=Y99WDBYb5xgAX_PMHXu&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT_WonafMFEOiJN2HaUJ5hbpMVie3AtB0KTfsbKu0Llg9Q&oe=62941ECD" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/86490310_2832841083619009_7132146541967441920_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=bUhTxOUZYJQAX_Sf4zU&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT_xpUkI-Txp8mhxsI2wl0NiR6-3CmOTqRYNDxdWRu5Uqg&oe=629450FC" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/87181045_2836688776567573_70551808568721408_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=EhgiFIVUAV8AX9xdbrd&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT_x_bVdM8oarmXXN-ZoIH3aMusGN8c1csF3uM0j6kU3bg&oe=62966BCE" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/86651956_2832835040286280_7639630089432334336_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=WqhpH8rC1OMAX92kADE&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT9o64ihyCWKEekGUtxDBhfybWuO_9vQgRUimSqaEDLbgQ&oe=6293A0E9" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/56184380_2539061289663658_1292822672635330560_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=y9vQVO8grwEAX_eC5Ob&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT-oEfyN2CJLwixx0_bhr9whT3XQFRLW94yYVUoS3X0JEg&oe=62952024" alt=""></div>
+                            <div class="swiper-slide"><img src="https://scontent.fcmb10-1.fna.fbcdn.net/v/t1.6435-9/56158297_2539059729663814_761835621017714688_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=2nid1lmY4t4AX8ibgw1&_nc_ht=scontent.fcmb10-1.fna&oh=00_AT9a7quxxOocxOsLTFQTHlrrDbaqGBrkUR6glUBCZUv5OQ&oe=629367CF" alt=""></div>
+
+                            
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Working Hours Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="h-100">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126741.40256425903!2d79.861463!3d6.930129!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x35d1bb7f93619aad!2zNsKwNTUnNDguNSJOIDc5wrA1MSc0MS4zIkU!5e0!3m2!1sen!2slk!4v1651403085513!5m2!1sen!2slk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-secondary h-100 d-flex flex-column justify-content-center p-5">
+                        <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">Event Details</p>
+                        <h1 class="text-uppercase mb-4">Join us and Have fun !!</h1>
+                        <div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <span class="text-uppercase txt-tpc"><i class="fas fa-map-marker-alt"></i>Venue </span>
+                                <h6 class=" mb-0 txt-spcl">@Trace Expert City</h6>
+                            </div>
+
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <span class="text-uppercase txt-tpc"><i class="far fa-clock"></i>Time </span>
+                                <h6 class=" mb-0 txt-spcl">11am Onwards</h6>
+                            </div>
+
+                            <div class="d-flex justify-content-between  py-2">
+                                <span class="text-uppercase txt-tpc"><i class="far fa-calendar-alt"></i>Date </span>
+                                <h6 class=" mb-0 txt-spcl"> 8th of May 2022</h6>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Working Hours End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5" id="compete">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block bg-secondary text-primary py-1 px-4">Competition</p>
+                <h1 class="text-uppercase">REGISTER FOR THE competition</h1>
+            </div>
+            <div id="overlay"></div>
+            <div class="row g-3">
+                <div class="col-lg-6 wow fadeIn align-items-center d-flex align-items-center flex-column" data-wow-delay="0.5s">
+                    <h4 class="text-uppercase">REGISTER YOURSELF</h4>
+                    <p class="text-primary">HOTDOG SHOWDOWN – SOLO CATEGORY</p>
+                    <input  onclick="soloRegister();" class="btn btn-primary rounded-0 py-2 px-lg-4 d-lg-block" value="REGISTER">
+                </div>
+                <div class="col-lg-6 wow fadeIn d-flex align-items-center flex-column" data-wow-delay="0.5s">
+                    <h4 class="text-uppercase">REGISTER YOUR TEAM</h4>
+                    <p class="text-primary">HOTDOG SHOWDOWN – TEAM CATEGORY</p>
+                    <input  onclick="TeamRegister();" class="btn btn-primary rounded-0 py-2 px-lg-4  d-lg-block" value="REGISTER">
+
+                </div>
+            </div>
+            <!-- solo form -->
+            <div class="solo">
+                <div class="solo-form">
+                    <button onclick="closeForm();"><span class="close"><i class="far fa-times-circle"></i></span></button>
+                    
+                    <div class="d-flex topic-fm justify-content-center flex-column align-items-center mb-4">
+                    <h1>SOLO CATEGORY</h1>
+                    <h4 class="text-uppercase">HOTDOG EATING COMPETITION </h4>
+                    </div>
+                    <div class="solo-fm ">
+                        <form  name="solo-form">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <label for="name">Name :</label>
+                                <input type="text" id="name" name="Name" placeholder="Enter Your Name">
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <label for="email">E-Mail :</label>
+                                <input type="email" id="email" name="Email" placeholder="Enter Your Email">
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <label for="contact">Contact :</label>
+                                <input type="tel" maxlength="10" id="contact" name="Contact" placeholder="Enter Your Contact No">
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <label for="nic">NIC :</label>
+                                <input type="text" id="nic" name="NIC" placeholder="Enter Your NIC No">
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-4 gender-sp">
+                                <label for="gender">Gender :</label>
+                                <span class="gens d-flex align-items-center justify-content-between">
+                                <input type="radio" id="male" name="Gender" value="male" checked>
+                                <label for="male" class="male">Male</label><br>
+
+                                <input type="radio" id="female" name="Gender" value="female">
+                                <label for="female" class="female">Female</label></span>
+                            </div>
+                            <button  class="btn btn-primary rounded-0 py-2 px-lg-4  d-lg-block sub-solo" type="submit" value="SUBMIT" id="subform" >SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- end solo form -->
+
+            <!-- team form -->
+            <div class="team">
+                <div class="team-form">
+                    <button onclick="closeForm2();"><span class="close"><i class="far fa-times-circle"></i></span></button>
+                    
+                    <div class="d-flex topic-fm justify-content-center flex-column align-items-center mb-4">
+                    <h1>TEAM CATEGORY</h1>
+                    <h4 class="text-uppercase">HOTDOG EATING COMPETITION </h4>
+                    </div>
+                    <div class="solo-fm ">
+                        <form action="" name="team-form">
+                            <div class="row">
+                            <div class="teammate1 col-lg-6">
+                                <p class="text-primary">TEAMMATE 1</p>
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <label for="name">Name :</label>
+                                    <input type="text" id="name2" name="TeamMate1" placeholder="Enter Your Name">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <label for="email">E-Mail :</label>
+                                    <input type="email" id="email2" name="Email1" placeholder="Enter Your Email">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <label for="contact">Contact :</label>
+                                    <input type="tel" maxlength="10" name="Contact1" id="contact2" placeholder="Enter Your Contact No">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <label for="nic">NIC :</label>
+                                    <input type="text" id="nic2" name="NIC1" placeholder="Enter Your NIC No">
+                                </div>
+                            </div>
+                            <div class="teammate2 col-lg-6">
+                                <p class="text-primary">TEAMMATE 2</p>
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <label for="name">Name :</label>
+                                    <input type="text" id="name3" name="TeamMate2" placeholder="Enter Your Name">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <label for="email">E-Mail :</label>
+                                    <input type="email" id="email3"  name="Email2" placeholder="Enter Your Email">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <label for="contact">Contact :</label>
+                                    <input type="tel" maxlength="10" name="Contact2" id="contact3" placeholder="Enter Your Contact No">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <label for="nic">NIC :</label>
+                                    <input type="text" id="nic3" name="NIC2" placeholder="Enter Your NIC No">
+                                </div>
+                            </div>
+                            </div>
+                            <button  class="btn btn-primary rounded-0 py-2 px-lg-4  d-lg-block sub-solo" type="submit" value="SUBMIT" id="subform2" >SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- end teamform -->
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Get In Touch</h4>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-phone-alt text-primary"></span>
+                        </div>
+                        <span>Rumeth - 075 581 6179</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-phone-alt text-primary"></span>
+                        </div>
+                        <span>Steevan - 076 993 3296</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-phone-alt text-primary"></span>
+                        </div>
+                        <span>Induwara - 077 369 7779</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-phone-alt text-primary"></span>
+                        </div>
+                        <span>Hakeem - 077 538 6486</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="index.html">Home</a>
+                    <a class="btn btn-link" href="#about">About Us</a>
+                    <a class="btn btn-link" href="#objective">Objective</a>
+                    <a class="btn btn-link" href="#event">Events</a>
+                    <a class="btn btn-link" href="#gallery">Gallery</a>
+                    <a class="btn btn-link" href="#compete">Competition</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    
+                   <div class="rotatract mb-5">
+                       <img src="img/white-logo2.png" alt="">
+                   </div>
+                    <div class="d-flex pt-1 m-n1 justify-content-evenly">
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href="https://www.instagram.com/rotaract_iit/"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href="https://www.facebook.com/iitrotaract"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href="https://www.youtube.com/user/iitrotaract"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href="https://twitter.com/IITRotaract"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-12 text-center  mb-2 mb-md-0">
+                        &copy; <a class="border-bottom" href="http://rciit.org/">rciit.org @2022</a>, All Right Reserved.
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src='js/three.min.js'></script>
+    <script src='js/TweenMax.min.js'></script>
+    <script src='js/bas.js'></script>
+    <script src='js/OrbitControls-2.js'></script>
+    <script src="js/index.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+ <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+      if ($(window).width() < 768) {
+        var swiper = new Swiper(".mySwiper", {
+             loop: true,
+             spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+
+      });
+      }
+      else{
+   var swiper = new Swiper(".mySwiper", {
+     slidesPerView: 4,
+    //  loop: true,
+     grid: {
+       rows: 2,
+     },
+     spaceBetween: 30,
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+     autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+
+   });}
+ </script>
+ <!-- partial -->
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js'></script>
+ 
+ <script>
+     //submit solo register with validation check
+     document.getElementById("subform").addEventListener("click", e => {
+        e.preventDefault();
+        submitform();
+    });
+         //submit team register with validation check
+         document.getElementById("subform2").addEventListener("click", e => {
+        e.preventDefault();
+        submitform2();
+    });
+ </script>
+ 
+</body>
+
+</html>
